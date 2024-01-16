@@ -8,6 +8,7 @@ use App\Http\Controllers\PerawatController;
 use App\Http\Controllers\DokterController;
 use App\Http\Controllers\PenunjangController;
 use App\Http\Controllers\FarmasiController;
+use App\Http\Controllers\ChartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +42,4 @@ Route::post('/create-penunjang', [PenunjangController::class, 'storePenunjang'])
 Route::post('/create-farmasi', [FarmasiController::class, 'storeFarmasi']);
 
 
-Route::get('/chart', [SurveyController::class, 'viewChart']);
+Route::get('/chart', [ChartController::class, 'getchartData']);
